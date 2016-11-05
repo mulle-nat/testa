@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: xcode7.1  # make it 10.10 (for now)
+
+
+before_install:
+   - brew tap codeon-gmbh/software
+   - brew install mulle-clang
+
+script:
+   - mulle-clang --version
